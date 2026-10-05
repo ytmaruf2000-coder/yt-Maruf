@@ -1,0 +1,6 @@
+{
+  "name": "ShopCommission",
+  "description": "ShopCommission affiliate earnings, registration, login and commission tracking application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

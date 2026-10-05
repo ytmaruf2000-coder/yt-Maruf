@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #3525cd;
+    --color-primary-container: #4f46e5;
+    --color-secondary: #712ae2;
+    --color-secondary-container: #8a4cfc;
+    --color-surface: #f7f9fb;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f2f4f6;
+    --color-surface-container: #eceef0;
+    --color-surface-container-high: #e6e8ea;
+    --color-surface-container-highest: #e0e3e5;
+    --color-on-surface: #191c1e;
+    --color-on-surface-variant: #464555;
+    --color-outline: #777587;
+    --color-outline-variant: #c7c4d8;
+    --color-error: #ba1a1a;
+  }
+
+  body {
+    font-family: 'Inter', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f7f9fb;
+    color: #191c1e;
+  }
+}
+
+/* Design System Utilities from HTML Mockups */
+.font-headline-xl {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-headline-lg-mobile {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: 'Inter', 'Hind Siliguri', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: 'Inter', 'Hind Siliguri', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Inter', 'Hind Siliguri', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.font-label-md {
+  font-family: 'Inter', 'Hind Siliguri', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.font-label-sm {
+  font-family: 'Inter', 'Hind Siliguri', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.font-mono-data {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+/* Material symbol styles */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  vertical-align: middle;
+}
+
+/* Specific spacing helpers */
+.p-space-xl { padding: 2.5rem; }
+.p-space-lg { padding: 1.5rem; }
+.p-space-md { padding: 1rem; }
+.space-y-space-md > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.space-y-space-lg > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+/* Custom background & text colors mapping for exact HTML class compatibility */
+.bg-surface { background-color: #f7f9fb; }
+.bg-surface-container-lowest { background-color: #ffffff; }
+.bg-surface-container-low { background-color: #f2f4f6; }
+.bg-surface-container { background-color: #eceef0; }
+.bg-surface-container-high { background-color: #e6e8ea; }
+.bg-surface-container-highest { background-color: #e0e3e5; }
+.bg-primary { background-color: #3525cd; }
+.bg-primary-container { background-color: #4f46e5; }
+.bg-secondary { background-color: #712ae2; }
+.bg-secondary-container { background-color: #8a4cfc; }
+
+.text-on-surface { color: #191c1e; }
+.text-on-surface-variant { color: #464555; }
+.text-outline { color: #777587; }
+.text-primary { color: #3525cd; }
+.text-primary-container { color: #4f46e5; }
+.text-secondary { color: #712ae2; }
+.text-on-primary { color: #ffffff; }
+
+.border-outline-variant { border-color: #c7c4d8; }
+.border-outline { border-color: #777587; }
+
